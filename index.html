@@ -37,6 +37,8 @@
         />
         Aplicación para Stock
       </a>
+      <a class="navbar-brand" href="./listaprovedores.html">Lista de Provedores</a>
+      
     </nav>
     <!-- Formulario Agregar Productos -->
     <div class="container mt-3" >
@@ -74,7 +76,12 @@
               </div>
               <input
                 type="submit"
-                value="Agregar"
+                value="Agregar al Stock"
+                class="btn btn-primary btn-block"
+              />
+              <input id="vaciarStock"
+                type="submit"
+                value="Vaciar Stock"
                 class="btn btn-primary btn-block"
               />
             </form>
@@ -82,6 +89,7 @@
         </div>
 
         <div class="col-md-8" id="listaProductos"></div>
+        
       </div>
     </div>
 
@@ -103,11 +111,18 @@
                 />
               </div>
 
-              <input
+              <input id="buscarProducto"
                 type="submit"
-                value="Buscar"
+                value="Buscar en Stock"
                 class="btn btn-primary btn-block"
               />
+              <input
+                id="vaciarBusqueda"
+                type="submit"
+                value="Vaciar Busqueda"
+                class="btn btn-primary btn-block"
+              />
+              
             </form>
           </div>
         </div>
@@ -115,7 +130,7 @@
         <div class="col-md-8" id="listaBuscados"></div>
       </div>
     </div>
-<!-- Script tostify -->
+    <!-- Script tostify -->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
@@ -123,6 +138,6 @@
     <!-- Script sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Script javascript -->
-    <script src="./aplicacion.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
